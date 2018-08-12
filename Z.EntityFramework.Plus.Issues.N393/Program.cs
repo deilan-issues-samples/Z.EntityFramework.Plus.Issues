@@ -15,7 +15,7 @@ namespace Z.EntityFramework.Plus.Issues.N393
                 {
                     Name = "John Doe"
                 };
-                var audit = new Plus.Audit { CreatedBy = "ZZZ Projects" }; // Optional
+                var audit = new Audit { CreatedBy = "ZZZ Projects" };
                 dbContext.Students.Add(student);
                 await dbContext.SaveChangesAsync(audit);
             }
